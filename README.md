@@ -20,5 +20,5 @@ The algorithm follows Nash, J. D., M. H. Alford, and E. Kunze, 2005: Estimating 
   - Applying a high-pass (band-pass) filter to remove mesoscale variations.
 #### 3. Computing Flux:
   - The flux is computed as the product of the velocity and pressure perturbations $u'$ and $p'$, respectively. There is a slight difference between zonal and meridional flux related to partial cells in MITgcm. 
-    $$F_x = u'p' \Delta z_f \cdot \text{DYG} \cdot \text{hFacW}$$ $$F_x = v'p' \Delta z_f \cdot \text{DXG} \cdot \text{hFacS}$$. 
+    $$F_x = u'p' \Delta z_f \cdot \text{DYG} \cdot \text{hFacW}$$ $$F_y = v'p' \Delta z_f \cdot \text{DXG} \cdot \text{hFacS}$$. 
  
