@@ -6,7 +6,9 @@ Mazloff, M. R., Cornuelle, B.,Gille, S. T., & Wang, J. (2020). Theimportance of 
 
 ### Calculation Procedures
 Follows Nash et al. (2005)
+
 #### 1. Density and Pressure Calculation:
+
 - **Density Calculation**: 
   - The potential density is typically calculated from salinity (S) and temperature (T) data. Using the JMD95 equation of state, it is given by:
   
@@ -16,8 +18,7 @@ Follows Nash et al. (2005)
   - 
 - **Pressure Calculation**: 
   - The pressure at each depth level is often calculated by integrating the weight of the water column above it. This is represented by the formula:
-
-    $$ \text{P}_n = \sum_{i=0}^{n} (\text{\rho}_i \times \text{DRF}_i) $$
+    $$\text{P}_n = \sum_{i=0}^{n} (\text{\rho}_i \times \text{DRF}_i)$$
 
 #### 2. Perturbation Calculation:
 - Perturbations in variables like pressure and velocity are computed by removing the mean or background state from the actual state. The procedure typically involves:
