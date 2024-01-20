@@ -19,6 +19,6 @@ The algorithm follows Nash, J. D., M. H. Alford, and E. Kunze, 2005: Estimating 
   - Removing the temporal linear trend.
   - Applying a high-pass (band-pass) filter to remove mesoscale variations.
 #### 3. Computing Flux:
-  - The flux is computed as the product of the velocity and pressure perturbations $u'$ and $p'$, respectively.
-    $$F = u'p'$$ on level n.
-  - The flux is scaled by the vertical grid spacing (DRF) and the horizontal grid spacing (DXG for meridional or DYG for zonal), multiplied by the cell fraction (hFacW, hFacS, or hFacC): $$F=u'p' \times DRF \times (\text{DXG or DYG}) \times \text{hFacW or hFacS}$$
+  - The flux is computed as the product of the velocity and pressure perturbations $u'$ and $p'$, respectively. There is a slight difference between zonal and meridional flux related to partial cells in MITgcm. 
+    $$F_x = u'p' \Delta z_f \text{DYG} \cdot \text{hFfacW}$$ $$F_x = v'p' \Delta z_f \text{DXG} \cdot \text{hFfacS}$$. 
+ 
