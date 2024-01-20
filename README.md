@@ -10,7 +10,7 @@ Follows Nash et al. (2005)
 - **Density Calculation**: 
   - The potential density is typically calculated from salinity (S) and temperature (T) data. Using the JMD95 equation of state, it is given by:
   
-    \[ \text{Density} = \text{function}(S, T, \text{pressure}) \]
+    $$ \text{Density} = \text{function}(S, T, \text{pressure}) $$
 
 - **Pressure Calculation**: 
   - The pressure at each depth level is often calculated by integrating the weight of the water column above it. This is represented by the formula:
