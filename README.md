@@ -11,7 +11,9 @@ Follows Nash et al. (2005)
   - The potential density is typically calculated from salinity (S) and temperature (T) data. Using the JMD95 equation of state, it is given by:
   
     $$ \text{Density} = \text{densjmd95}(S, T, \text{pressure}) $$
+    
   - densjmd95 comes from MITgcm utils: http://mitgcm.org/download/daily_snapshot/MITgcm/utils/python/MITgcmutils/MITgcmutils/jmd95.py
+  - 
 - **Pressure Calculation**: 
   - The pressure at each depth level is often calculated by integrating the weight of the water column above it. This is represented by the formula:
 
@@ -23,8 +25,10 @@ Follows Nash et al. (2005)
   - Applying a high-pass filter to remove mesoscale variations.
 
 #### 3. Energy Flux Calculation:
-- **Velocity and Pressure Perturbations**: 
-  - Let $ U_p $ and $ P_p $ represent the perturbations in the velocity and pressure fields, respectively.
+
+- **Velocity and Pressure Perturbations**:
+- 
+  - Let $U_p$ and $P_p$ represent the perturbations in the velocity and pressure fields, respectively.
 
 - **Computing Flux**:
   - The flux is computed as the product of the velocity perturbation and the average of pressure perturbations at adjacent levels:
