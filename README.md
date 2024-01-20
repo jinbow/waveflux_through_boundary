@@ -13,7 +13,7 @@ Follows Nash et al. (2005)
   - The potential density is typically calculated from salinity (S) and temperature (T) data. Using the JMD95 equation of state, it is given by: $\text{Density}=\text{densjmd95}(S, T, p)$
   - densjmd95 comes from MITgcm utils: http://mitgcm.org/download/daily_snapshot/MITgcm/utils/python/MITgcmutils/MITgcmutils/jmd95.py
 - **Pressure Calculation**: 
-  - The pressure at each depth level is often calculated by integrating the weight of the water column above it. This is represented by the formula: $$P_n = \sum_{i=0}^{n} \rho_i \times \Delta z_i)$$
+  - The pressure at each depth level is often calculated by integrating the weight of the water column above it. This is represented by the formula: $$P_n = \sum_{i=0}^{n} \rho_i \times \Delta z_i$$
 
 #### 2. Perturbation Calculation:
 - Perturbations in variables like pressure and velocity are computed by removing the mean or background state from the actual state. The procedure typically involves:
@@ -25,8 +25,7 @@ Follows Nash et al. (2005)
   - Let $U_p$ and $P_p$ represent the perturbations in the velocity and pressure fields, respectively.
 - **Computing Flux**:
   - The flux is computed as the product of the velocity perturbation and the average of pressure perturbations at adjacent levels:
-
-    $$\text{Flux} = U_p \times \frac{P_{p, \text{level}_n} + P_{p, \text{level}_{n+1}}}{2}$$
+    $$Flux = U_p \times \frac{P_{p, \text{level} n} + P_{p, \text{level} {n+1}}}{2}$$
 
   - The flux is scaled by the vertical grid spacing (DRF) and the horizontal grid spacing (DXG or DYG), multiplied by the cell fraction (hFacW, hFacS, or hFacC):
 
