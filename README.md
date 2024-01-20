@@ -26,9 +26,4 @@ Follows Nash et al. (2005)
 - **Computing Flux**:
   - The flux is computed as the product of the velocity perturbation and the average of pressure perturbations at adjacent levels:
     $$Flux = U_p \times \frac{P_{n} + P_{n+1}}{2}$$
-
   - The flux is scaled by the vertical grid spacing (DRF) and the horizontal grid spacing (DXG or DYG), multiplied by the cell fraction (hFacW, hFacS, or hFacC): $$Flux=Flux \times DRF \times (\text{DXG or DYG}) \times h$$
-
-- **Aggregation Over the Grid**:
-  - The final flux is obtained by aggregating these scaled fluxes, either by summing or averaging over certain dimensions: $$\text{Total Flux} = \sum (\text{Scaled Flux})$$, $$\text{Mean Flux} = \text{mean}(\text{Scaled Flux})$$
-
