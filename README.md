@@ -25,7 +25,7 @@ Follows Nash et al. (2005)
   - Let $U_p$ and $P_p$ represent the perturbations in the velocity and pressure fields, respectively.
 - **Computing Flux**:
   - The flux is computed as the product of the velocity perturbation and the average of pressure perturbations at adjacent levels:
-    $$Flux = U_p \times \frac{P_{p, \text{level } n} + P_{p, \text{level } {n+1}}}{2}$$
+    $$Flux = U_p \times \frac{P_{n} + P_{n+1}}{2}$$
 
   - The flux is scaled by the vertical grid spacing (DRF) and the horizontal grid spacing (DXG or DYG), multiplied by the cell fraction (hFacW, hFacS, or hFacC): $$Flux=Flux \times DRF \times (\text{DXG or DYG}) \times h$$
 
