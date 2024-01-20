@@ -18,7 +18,8 @@ Follows Nash et al. (2005)
   - 
 - **Pressure Calculation**: 
   - The pressure at each depth level is often calculated by integrating the weight of the water column above it. This is represented by the formula:
-    $$\text{P}_n = \sum_{i=0}^{n} (\text{\rho}_i \times \text{DRF}_i)$$
+  
+$$\text{P}_n = \sum_{i=0}^{n} (\text{\rho}_i \times \text{DRF}_i)$$
 
 #### 2. Perturbation Calculation:
 - Perturbations in variables like pressure and velocity are computed by removing the mean or background state from the actual state. The procedure typically involves:
