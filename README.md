@@ -13,7 +13,7 @@ Follows Nash et al. (2005)
   - The potential density is typically calculated from salinity (S) and temperature (T) data. Using the JMD95 equation of state, it is given by: $\text{Density}=\text{densjmd95}(S, T, p)$
   - densjmd95 comes from MITgcm utils: http://mitgcm.org/download/daily_snapshot/MITgcm/utils/python/MITgcmutils/MITgcmutils/jmd95.py
 - **Pressure Calculation**: 
-  - The pressure at each depth level is often calculated by integrating the weight of the water column above it. This is represented by the formula: $P_n = \Sum_{i=0}^{n} \rho_i \times \Delta z_i)$
+  - The pressure at each depth level is often calculated by integrating the weight of the water column above it. This is represented by the formula: $P_n = \sum_{i=0}^{n} \rho_i \times \Delta z_i)$
 
 #### 2. Perturbation Calculation:
 - Perturbations in variables like pressure and velocity are computed by removing the mean or background state from the actual state. The procedure typically involves:
