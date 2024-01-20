@@ -19,7 +19,6 @@ The algorithm follows Nash, J. D., M. H. Alford, and E. Kunze, 2005: Estimating 
   - Removing the temporal linear trend.
   - Applying a high-pass (band-pass) filter to remove mesoscale variations.
 #### 3. Computing Flux:
-  - The flux is computed as the product of the velocity and pressure perturbations $U_p$ and $P_p$, respectively.
-    $$Flux = U_p \times P_p$$ on level n.
-  - 
+  - The flux is computed as the product of the velocity and pressure perturbations $u'$ and $p'$, respectively.
+    $$Flux = u'p'$$ on level n.
   - The flux is scaled by the vertical grid spacing (DRF) and the horizontal grid spacing (DXG for meridional or DYG for zonal), multiplied by the cell fraction (hFacW, hFacS, or hFacC): $$Flux=Flux \times DRF \times (\text{DXG or DYG}) \times \text{hFacW or hFacS}$$
