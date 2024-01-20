@@ -10,7 +10,7 @@ Follows Nash et al. (2005)
 #### 1. Density and Pressure Calculation:
 
 - **Density Calculation**: 
-  - The potential density is typically calculated from salinity (S) and temperature (T) data. Using the JMD95 equation of state, it is given by: $ \text{Density} = \text{densjmd95}(S, T, \text{pressure})$
+  - The potential density is typically calculated from salinity (S) and temperature (T) data. Using the JMD95 equation of state, it is given by: $\text{Density}=\text{densjmd95}(S, T, p)$
   - densjmd95 comes from MITgcm utils: http://mitgcm.org/download/daily_snapshot/MITgcm/utils/python/MITgcmutils/MITgcmutils/jmd95.py
 - **Pressure Calculation**: 
   - The pressure at each depth level is often calculated by integrating the weight of the water column above it. This is represented by the formula: $\text{P}_n = \sum_{i=0}^{n} (\text{\rho}_i \times \text{DRF}_i)$
